@@ -1,0 +1,39 @@
+  .cart-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin:20px
+    /* text-align: center; */
+  }
+  
+  .cart-card img {
+    width: 25%;
+    height: auto;
+  }
+  
+  .cart-card-content {
+    padding: 10px 0; /* Reducing the bottom padding */
+  }
+
+  .cart-card-content h4 {
+    color: green
+  }
+  
+  .cart-bottom-section{
+    padding: 10px 0;
+  }
+  
+  .cart-card button {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-card-desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,0 +1,102 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  flex: 1;
+}
+
+.navbar-search {
+  flex: 2;
+  text-align: center;
+}
+
+.navbar-search input {
+  width: 60%;
+  padding: 10px;
+}
+
+.navbar-links {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff; /* Sets the color to white */
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu-icon:focus {
+  outline: 2px solid #fff;
+}
+
+.cart-navbar{
+  display: flex;
+  width: 58px
+}
+
+.cart-count{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding:2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Hide menu by default on small screens */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  .navbar-links li a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links.show-menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

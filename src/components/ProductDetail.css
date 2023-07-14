@@ -1,0 +1,28 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-container img {
+  border: 1px solid black
+}
+
+.product-card {
+    padding-top: 100px
+}
+
+.product-description {
+    padding: 20px;
+}
+
+.product-details-bottom {
+
+}
+
+.product-details-bottom button {
+    padding: 10px 20px;
+    background-color: #0275d8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
